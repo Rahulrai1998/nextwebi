@@ -1,15 +1,17 @@
 import { useState } from "react";
-import FirstSection from "./components/FirstSection";
 import styled from "styled-components";
-import SecondSection from "./components/SecondSection";
+import SecondSection from "./pages/SecondSection";
+import { Header } from "./pages/Header";
+import { Footer } from "./pages/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <ParentContainer>
-      <FirstSection />
+      <Header />
       <SecondSection />
+      <Footer/>
     </ParentContainer>
   );
 }

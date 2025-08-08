@@ -1,14 +1,13 @@
 import React from "react";
-import logo from "../assets/logo.png";
-
-import Carousel from "./Carousel";
+import logo from "../../assets/logo.png";
+import Carousel from "../../components/Carousel";
 import styled from "styled-components";
-import FirstSecCarousalContent from "./FirstSecCarousalContent";
+import HeaderCarousalContent from "./HeaderCarousalContent";
 
-const FirstSection = () => {
+const Header = () => {
   return (
     <>
-      <section aria-label="Navigation section" className="nav-container">
+      <header aria-label="Navigation section" className="nav-container">
         <nav className="nav" role="navigation" aria-label="Main navigation">
           <img src={logo} alt="company logo" className="logo-img" />
           <ul className="page-nav-list">
@@ -35,17 +34,17 @@ const FirstSection = () => {
         </nav>
         <div style={{ width: "70%", margin: "7rem auto" }}>
           <Carousel>
-            <FirstSecCarousalContent />
-            <FirstSecCarousalContent />
-            <FirstSecCarousalContent />
+            <HeaderCarousalContent />
+            <HeaderCarousalContent />
+            <HeaderCarousalContent />
           </Carousel>
         </div>
-      </section>
+      </header>
     </>
   );
 };
 
-export default FirstSection;
+export default Header;
 
 const BgSection = styled.section`
   &::before {

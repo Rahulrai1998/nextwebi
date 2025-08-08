@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const FirstSecCarousalContent = () => {
+const HeaderCarousalContent = () => {
   return (
     <ParentContainer>
       <h1>Offshore Software Development Company in New York</h1>
@@ -19,7 +19,7 @@ const FirstSecCarousalContent = () => {
   );
 };
 
-export default FirstSecCarousalContent;
+export default HeaderCarousalContent;
 
 const ParentContainer = styled.div`
   color: #ffffff;
@@ -39,12 +39,13 @@ const ParentContainer = styled.div`
 const ButtonGroup = styled.div`
   display: flex;
   justify-content: center;
-  gap:30px;
+  gap: 30px;
   width: 50%;
   margin: 30px auto;
 `;
 
 const Button = styled.button`
+  cursor: pointer;
   line-height: 24px;
   font-size: 16px;
   padding: 0px 20px;
