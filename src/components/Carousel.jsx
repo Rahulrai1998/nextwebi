@@ -1,32 +1,38 @@
-// Carousel.jsx
-import React, { useState } from "react";
-import logo from "../assets/logo.png";
-const images = [logo];
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-export default function Carousel() {
-  const [current, setCurrent] = useState(0);
-  const length = images.length;
-
-  const nextSlide = () => setCurrent((current + 1) % length);
-  const prevSlide = () => setCurrent((current - 1 + length) % length);
-
-  return (
-    <div className="carousel">
-      <button className="left-arrow" onClick={prevSlide}>
+const Carousel = ({ children }) => {
+  function CustomLeftArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <button onClick={onClick} className="left-arrow">
         &#10094;
       </button>
-      <button className="right-arrow" onClick={nextSlide}>
+    );
+  }
+
+  function CustomRightArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <button onClick={onClick} className="right-arrow">
         &#10095;
       </button>
+    );
+  }
 
-      {images.map((img, index) => (
-        <div
-          className={index === current ? "slide active" : "slide"}
-          key={index}
-        >
-          {index === current && <img src={img} alt={`Slide ${index}`} />}
-        </div>
-      ))}
-    </div>
-  );
-}
+  let settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <CustomRightArrow />,
+    prevArrow: <CustomLeftArrow />,
+  };
+
+  return <Slider {...settings}>{children}</Slider>;
+};
+
+export default Carousel;
