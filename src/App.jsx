@@ -3,6 +3,7 @@ import styled from "styled-components";
 import SecondSection from "./pages/SecondSection";
 import { Header } from "./pages/Header";
 import { Footer } from "./pages/Footer";
+import Testimonial from "./pages/Testimonial";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,7 +12,8 @@ function App() {
     <ParentContainer>
       <Header />
       <SecondSection />
-      <Footer/>
+      <Testimonial />
+      <Footer />
     </ParentContainer>
   );
 }
