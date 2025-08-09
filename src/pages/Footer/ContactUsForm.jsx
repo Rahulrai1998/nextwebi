@@ -23,11 +23,15 @@ const ContactUsForm = () => {
 
   return (
     <FormWrapper>
-      <FormTitle>
+      <FormTitle id="form-title">
         Your Vision, Our Mission: Let's Shape Success Together.
       </FormTitle>
 
-      <StyledForm onSubmit={handleSubmit}>
+      <StyledForm
+        role="form"
+        aria-labelledby="form-title"
+        onSubmit={handleSubmit}
+      >
         <div>
           <Input
             placeholder="Name"
@@ -90,20 +94,30 @@ const ContactUsForm = () => {
 
         <FormFooterWrapper>
           <div style={{ width: "80%" }}>
-            <input type="checkbox" id="get-portfolio" name="get-portfolio" />{" "}
-            <label htmlFor="get-portfolio" style={{ fontSize: "14px" }}>
-              Click here to quickly get portfolio in your inbox
-            </label>
+            <StyledFieldset>
+              <StyledLegend>Additional Options</StyledLegend>
+              <input
+                type="checkbox"
+                id="get-portfolio"
+                name="get-portfolio"
+              />{" "}
+              <label htmlFor="get-portfolio" style={{ fontSize: "14px" }}>
+                Click here to quickly get portfolio in your inbox
+              </label>
+            </StyledFieldset>
           </div>
 
           <div style={{ textAlign: "end" }}>
-            <Label htmlFor="checkhuman">5 + 3</Label>
-            <input
-              type="text"
-              name="checkhuman"
-              id="checkhuman"
-              style={{ marginLeft: "5px", width: "15%" }}
-            />
+            <StyledFieldset>
+              <StyledLegend>Solve Captcha</StyledLegend>
+              <Label htmlFor="checkhuman">5 + 3</Label>
+              <input
+                type="text"
+                name="checkhuman"
+                id="checkhuman"
+                style={{ marginLeft: "5px", width: "30%" }}
+              />
+            </StyledFieldset>
           </div>
         </FormFooterWrapper>
         <SubmitButton type="submit">Request Proposal</SubmitButton>
@@ -192,4 +206,54 @@ const FormFooterWrapper = styled.div`
   padding: 20px 0;
   justify-content: space-between;
   display: flex;
+  gap: 12px;
+`;
+
+const StyledFieldset = styled.fieldset`
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 20px 0;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  position: relative;
+
+  &:hover {
+    border-color: #ccc;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    legend {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  legend {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #ffffff;
+    position: absolute;
+    top: -12px;
+    left: 16px;
+    background: white;
+    padding: 0 6px;
+    pointer-events: none;
+  }
+`;
+
+const StyledLegend = styled.legend`
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0 8px;
+  color: #ffffff;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+
+  ${StyledFieldset}:hover & {
+    background-color: #1a1a1a;
+    border-radius: 4px;
+  }
 `;

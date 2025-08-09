@@ -7,7 +7,14 @@ import HeaderCarousalContent from "./HeaderCarousalContent";
 const Header = () => {
   return (
     <>
-      <header aria-label="Navigation section" className="nav-container">
+      <header
+        aria-label="Navigation section"
+        className="nav-container"
+        id="top-of-page"
+      >
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
         <nav className="nav" role="navigation" aria-label="Main navigation">
           <img src={logo} alt="company logo" className="logo-img" />
           <ul className="page-nav-list">
@@ -30,9 +37,16 @@ const Header = () => {
               <a href="#contact">Ourwork</a>
             </li>
           </ul>
-          <button className="contact-us-btn">Contact Us</button>
+          <button className="contact-us-btn" aria-label="Contact our team">
+            Contact Us
+          </button>
         </nav>
-        <div style={{ width: "70%", margin: "7rem auto" }}>
+        <div
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Featured highlights"
+          style={{ width: "85%", margin: "7rem auto" }}
+        >
           <Carousel>
             <HeaderCarousalContent />
             <HeaderCarousalContent />
@@ -45,18 +59,3 @@ const Header = () => {
 };
 
 export default Header;
-
-const BgSection = styled.section`
-  &::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: url("assets/nav-bg.jpg") no-repeat center/cover;
-    z-index: -1;
-    opacity: 0.9;
-    filter: brightness(60%);
-    z-index: -1;
-    top: 0;
-  }
-`;

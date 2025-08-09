@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Testimonial = () => {
   return (
-    <ParentContainer>
+    <ParentContainer role="region" aria-label="Client testimonials">
       <Image src={testimonial} alt="Testimonial reports image" />
     </ParentContainer>
   );

@@ -33,14 +33,14 @@ const Footer = () => {
   return (
     <ParentContainer>
       <Addresses>
-        <H6 style={{}}>Get in Touch</H6>
+        <H6>Get in Touch</H6>
         <H1>Connect for Excellence Your Gateway to Exceptional Solutions.</H1>
 
         <AddressGrid>
           {addresses?.map((add) => {
             return (
               <AddressWrapper key={add?.id}>
-                <Image src={add?.img} />
+                <Image src={add?.img} alt={`Flag of ${add?.country}`} />
                 <H6>{add?.country}</H6>
                 <P>{add?.address}</P>
               </AddressWrapper>
@@ -49,6 +49,9 @@ const Footer = () => {
         </AddressGrid>
       </Addresses>
       <ContactUsForm />
+      <a href="#top-of-page" className="skip-link">
+        Back to Top
+      </a>
     </ParentContainer>
   );
 };
@@ -56,6 +59,7 @@ const Footer = () => {
 export default Footer;
 
 const ParentContainer = styled.section`
+  font-family: Lato;
   padding: 2rem;
   display: flex;
   gap: 2rem;

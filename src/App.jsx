@@ -4,6 +4,7 @@ import SecondSection from "./pages/SecondSection";
 import { Header } from "./pages/Header";
 import { Footer } from "./pages/Footer";
 import Testimonial from "./pages/Testimonial";
+import { Services } from "./pages/Services";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,8 +12,11 @@ function App() {
   return (
     <ParentContainer>
       <Header />
-      <SecondSection />
-      <Testimonial />
+      <main id="main-content">
+        <SecondSection />
+        <Services />
+        <Testimonial />
+      </main>
       <Footer />
     </ParentContainer>
   );
@@ -23,4 +27,16 @@ export default App;
 const ParentContainer = styled.section`
   display: flex;
   flex-direction: column;
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+  }
+  .skip-link:focus {
+    top: 0;
+  }
 `;
