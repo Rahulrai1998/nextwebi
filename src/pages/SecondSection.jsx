@@ -48,6 +48,12 @@ const ParentContainer = styled.section`
   display: flex;
   color: #ffffff;
   font-family: Lato;
+
+  &:nth-child(1) {
+    position: sticky;
+    top: 0;
+    z-index: -1;
+  }
 `;
 
 const LeftContainer = styled.article`

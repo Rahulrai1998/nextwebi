@@ -32,6 +32,7 @@ const ParentContainer = styled.section`
   display: flex;
   flex-direction: column;
   color: white;
+  position: relative;
   .skip-link {
     position: absolute;
     top: -40px;

@@ -3,6 +3,7 @@ import logo from "../../assets/logo.png";
 import Carousel from "../../components/Carousel";
 import styled from "styled-components";
 import HeaderCarousalContent from "./HeaderCarousalContent";
+import Dropdown from "../../components/Dropdown";
 
 const Header = () => {
   return (
@@ -18,21 +19,46 @@ const Header = () => {
         <nav className="nav" role="navigation" aria-label="Main navigation">
           <img src={logo} alt="company logo" className="logo-img" />
           <ul className="page-nav-list">
-            <li>
-              <a href="#home">Company</a>
-            </li>
-            <li>
-              <a href="#about">Services</a>
-            </li>
-            <li>
-              <a href="#services">Hire Developers</a>
-            </li>
-            <li>
-              <a href="#contact">Solutions</a>
-            </li>
-            <li>
-              <a href="#contact">Technologies</a>
-            </li>
+            <Dropdown
+              label="Company"
+              options={[
+                { label: "About us", href: "#aboutus" },
+                { label: "Addresses", href: "#address" },
+              ]}
+            />
+
+            <Dropdown
+              label="Services"
+              options={[
+                { label: "Web Development", href: "#web" },
+                { label: "Mobile Apps", href: "#mobile" },
+                { label: "Cloud Solutions", href: "#cloud" },
+              ]}
+            />
+
+            <Dropdown
+              label="Hire Developers"
+              options={[
+                { label: "Frontend Devs", href: "#frontend" },
+                { label: "Backend Devs", href: "#backend" },
+                { label: "Full Stack Devs", href: "#fullstack" },
+              ]}
+            />
+
+            <Dropdown
+              label="Solutions"
+              options={[
+                { label: "E-Commerce", href: "#ecom" },
+                { label: "SaaS Platforms", href: "#saas" },
+              ]}
+            />
+            <Dropdown
+              label="Technologies"
+              options={[
+                { label: "Gen AI", href: "#ecom" },
+                { label: "Web Development", href: "#saas" },
+              ]}
+            />
             <li>
               <a href="#contact">Ourwork</a>
             </li>
