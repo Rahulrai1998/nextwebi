@@ -9,6 +9,7 @@ import { ClientProjects } from "./pages/ClientProjects";
 import GlobalClients from "./pages/GlobalClients";
 import { TeamWorkflow } from "./pages/TeamWorkflow";
 import Faq from "./pages/FAQs/Faq";
+import { ClientTetstimonials } from "./pages/ClientTestimonials";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <GlobalClients />
         <TeamWorkflow />
         <Faq />
+        <ClientTetstimonials />
       </main>
       <Footer />
     </ParentContainer>

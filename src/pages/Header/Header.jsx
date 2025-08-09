@@ -60,7 +60,7 @@ const Header = () => {
               ]}
             />
             <li>
-              <a href="#contact">Ourwork</a>
+              <a href="#contact">Our work</a>
             </li>
           </ul>
           <button className="contact-us-btn" aria-label="Contact our team">
