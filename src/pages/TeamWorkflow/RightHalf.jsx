@@ -11,6 +11,7 @@ const RightHalf = () => {
 };
 
 export default RightHalf;
+
 const ParentContainer = styled.div`
   width: 80%;
 `;
