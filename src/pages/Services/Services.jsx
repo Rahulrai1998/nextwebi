@@ -9,12 +9,12 @@ import bottomLeftImg from "../../assets/gradients/gradient-left-bottom.png";
 
 const Services = () => {
   return (
-    <ParentContainer aria-labelledby="offshore-title" role="region">
+    <ParentContainer aria-labelledby="services-title" role="region">
       {" "}
       <TopRightImage src={topRightImg} alt="" aria-hidden="true" />
       <BottomLeftImage src={bottomLeftImg} alt="" aria-hidden="true" />
       <header>
-        <Title id="offshore-title">
+        <Title id="services-title">
           Output-Driven Offshore Software Development Centre
         </Title>
         <SubTitle>
@@ -22,7 +22,7 @@ const Services = () => {
           remote team or a software development company
         </SubTitle>
       </header>
-      <section aria-labelledby="offshore-title">
+      <section aria-labelledby="services-title">
         <ServicesCardGrid>
           {servicesData?.map((service) => (
             <ServicesCard key={service?.id} {...service} />

@@ -5,6 +5,8 @@ import { Header } from "./pages/Header";
 import { Footer } from "./pages/Footer";
 import Testimonial from "./pages/Testimonial";
 import { Services } from "./pages/Services";
+import { ClientProjects } from "./pages/ClientProjects";
+import GlobalClients from "./pages/GlobalClients";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +18,8 @@ function App() {
         <SecondSection />
         <Services />
         <Testimonial />
+        <ClientProjects />
+        <GlobalClients />
       </main>
       <Footer />
     </ParentContainer>
