@@ -6,9 +6,9 @@ import FaqAccordion from "./FaqAccordion";
 
 const Faq = () => {
   return (
-    <ParentContainer aria-labelledby="offshore-title" role="region">
+    <ParentContainer aria-labelledby="faq-title" role="region">
       {" "}
-      <Title id="offshore-title">
+      <Title id="faq-title">
         Offshore Dedicated Development Team for Your Project Requirements
       </Title>
       <SubTitle>

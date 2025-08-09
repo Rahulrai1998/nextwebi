@@ -10,6 +10,7 @@ import GlobalClients from "./pages/GlobalClients";
 import { TeamWorkflow } from "./pages/TeamWorkflow";
 import Faq from "./pages/FAQs/Faq";
 import { ClientTetstimonials } from "./pages/ClientTestimonials";
+import { Technologies } from "./pages/Technologies";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <TeamWorkflow />
         <Faq />
         <ClientTetstimonials />
+        <Technologies />
       </main>
       <Footer />
     </ParentContainer>
