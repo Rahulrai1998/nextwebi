@@ -7,10 +7,9 @@ import Testimonial from "./pages/Testimonial";
 import { Services } from "./pages/Services";
 import { ClientProjects } from "./pages/ClientProjects";
 import GlobalClients from "./pages/GlobalClients";
+import { TeamWorkflow } from "./pages/TeamWorkflow";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <ParentContainer>
       <Header />
@@ -20,6 +19,7 @@ function App() {
         <Testimonial />
         <ClientProjects />
         <GlobalClients />
+        <TeamWorkflow />
       </main>
       <Footer />
     </ParentContainer>
@@ -31,6 +31,7 @@ export default App;
 const ParentContainer = styled.section`
   display: flex;
   flex-direction: column;
+  color: white;
   .skip-link {
     position: absolute;
     top: -40px;
