@@ -50,6 +50,12 @@ const ServicesCardGrid = styled.div`
   margin-left: 0;
   gap: 30px;
   padding: 2rem 0;
+
+  @media (max-width: 650px) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 1rem 0;
+    gap: 20px;
+  }
 `;
 const BackgroundImage = styled.img`
   position: absolute;

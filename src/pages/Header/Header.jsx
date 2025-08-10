@@ -144,7 +144,7 @@ const Header = () => {
           role="region"
           aria-roledescription="carousel"
           aria-label="Featured highlights"
-          style={{ width: "85%", margin: "7rem auto" }}
+          style={{ width: "85%", margin: "9rem auto" }}
         >
           <Carousel>
             <HeaderCarousalContent />

@@ -25,9 +25,27 @@ const Carousel = ({ children }) => {
   let settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,
+    customPaging: function (slider, i) {
+      return (
+        <button
+          type="button"
+          
+          role="button"
+          tabIndex="0"
+          style={{
+            width: "8px",
+            height: "8px",
+            borderRadius: "50%",
+            background: "#9d9d9d",
+            margin: "0px !important",
+          }}
+          className="custom-dot"
+        ></button>
+      );
+    },
     nextArrow: <CustomRightArrow />,
     prevArrow: <CustomLeftArrow />,
   };

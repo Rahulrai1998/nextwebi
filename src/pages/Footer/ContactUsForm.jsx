@@ -142,6 +142,9 @@ const FormWrapper = styled.div`
   );
   background-color: rgba(19, 19, 19, 1);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  @media (max-width: 1000px) {
+    margin: 10px auto;
+  }
 `;
 
 const StyledForm = styled.form`
@@ -207,6 +210,11 @@ const FormFooterWrapper = styled.div`
   justify-content: space-between;
   display: flex;
   gap: 12px;
+  @media (max-width: 526px) {
+    padding: 2px 0;
+    gap: 2px;
+    margin: 0;
+  }
 `;
 
 const StyledFieldset = styled.fieldset`

@@ -10,7 +10,7 @@ export default Title;
 const H1 = styled.h1`
   font-weight: 700;
   font-style: bold;
-  font-size: 42px;
+  font-size: max(2.6vw, 25px);
   line-height: 50px;
   letter-spacing: -0.02em;
   margin-bottom: 1rem;

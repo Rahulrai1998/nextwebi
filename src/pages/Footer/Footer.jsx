@@ -65,6 +65,10 @@ const ParentContainer = styled.section`
   gap: 2rem;
   color: #ffffff;
   background: url(${bgFooter}) no-repeat center/cover;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
 
 const H6 = styled.h6`
@@ -93,6 +97,9 @@ const AddressGrid = styled.div`
   margin-left: 0;
   gap: 30px;
   padding: 2rem 0;
+  @media (max-width: 1000px) {
+    padding: 1rem 0;
+  }
 `;
 
 const Addresses = styled.div`
@@ -101,6 +108,9 @@ const Addresses = styled.div`
   max-width: 600px;
   margin: 40px auto;
   padding: 35px;
+  @media (max-width: 1000px) {
+    margin: 10px auto;
+  }
 `;
 
 const AddressWrapper = styled.div`

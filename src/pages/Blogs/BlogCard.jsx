@@ -67,4 +67,9 @@ const Card = styled.div`
     // width: 2px;
     border: 1px solid rgba(38, 38, 38, 1);
   }
+
+  @media (max-width: 900px) {
+    margin: auto;
+    padding: 1rem 0;
+  }
 `;

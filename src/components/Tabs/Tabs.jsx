@@ -39,7 +39,7 @@ const Tabs = ({ defaulValue = 0, tabData = [] }) => {
         {tabData.map((tab, index) => (
           <Tab
             className="tab-section"
-            isSelected={index === selected}
+            isselected={index === selected}
             key={tab.id}
             ref={(el) => (tabRefs.current[index] = el)}
             id={`tab-${tab.id}`}
@@ -88,7 +88,7 @@ const Tab = styled.button`
   color: #fff;
   border: none;
   border-radius: 10px;
-  background: ${(prop) => (prop.isSelected ? "rgba(27, 27, 27, 1)" : "none")};
+  background: ${(prop) => (prop.isselected ? "rgba(27, 27, 27, 1)" : "none")};
 `;
 
 const TabList = styled.div`

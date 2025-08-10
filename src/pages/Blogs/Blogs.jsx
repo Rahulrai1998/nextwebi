@@ -22,7 +22,6 @@ export default Blogs;
 const ParentContainer = styled.div`
   position: relative;
   font-family: Lato;
-
   background-color: rgba(26, 26, 26, 1);
   color: #ffffff;
 `;
@@ -33,4 +32,7 @@ const BlogContainer = styled.div`
   gap: 10px;
   position: relative;
   justify-content: center;
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
 `;

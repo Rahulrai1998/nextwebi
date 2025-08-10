@@ -11,6 +11,6 @@ const H4 = styled.h4`
   font-style: bold;
   font-weight: 500;
   line-height: 31px;
-  font-size: 20px;
+  font-size: max(1.15vw, 15px);
   margin-bottom: 3rem;
 `;

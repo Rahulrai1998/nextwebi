@@ -171,3 +171,11 @@ img {
 .right-arrow {
   right: 10px;
 }
+
+.slick-dots li button:before {
+  display: none !important;
+}
+.slick-dots .slick-active .custom-dot {
+  background-color: #fff !important;
+  opacity: 1;
+}

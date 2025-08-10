@@ -48,7 +48,9 @@ const ParentContainer = styled.section`
   display: flex;
   color: #ffffff;
   font-family: Lato;
-
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
   &:nth-child(1) {
     position: sticky;
     top: 0;
@@ -57,6 +59,7 @@ const ParentContainer = styled.section`
 `;
 
 const LeftContainer = styled.article`
+  width: 70%;
   padding: 4rem 0 4rem 4rem;
   p {
     font-weight: 500;
@@ -64,14 +67,27 @@ const LeftContainer = styled.article`
     font-size: 1rem;
     line-height: 27px;
   }
+  @media (max-width: 650px) {
+    padding: 1rem 4rem;
+    p {
+      line-height: 20px;
+    }
+  }
 `;
 
 const RightContainer = styled.div`
   padding: 4rem 4rem 4rem 0;
-  max-width: 670px;
+  max-width: 640px;
   width: 100%;
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  @media (max-width: 650px) {
+    margin: auto;
+    img {
+      max-width: 90%;
+    }
   }
 `;

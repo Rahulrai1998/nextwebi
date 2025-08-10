@@ -29,10 +29,10 @@ const ParentContainer = styled.div`
   margin: auto;
   h1 {
     font-weight: bold;
-    font-size: 62px;
+    font-size: max(30px, 3.5vw);
   }
   p {
-    font-size: 20px;
+    font-size: max(15px, 1.5vw);
   }
 `;
 
@@ -47,10 +47,10 @@ const ButtonGroup = styled.div`
 const Button = styled.button`
   cursor: pointer;
   line-height: 24px;
-  font-size: 16px;
-  padding: 0px 20px;
-  height: 40px;
-  border-radius: 10px;
+  font-size: max(10px, 1vw);
+  padding: 9px 30px;
+  border-radius: 12px;
+  white-space: nowrap;
   color: #ffffff;
   background-color: ${(props) => props.$bgcolor || "rgba(255, 255, 255, 0)"};
   border: ${(props) => props.$bgcolor || "#ffffff 1px solid"};
