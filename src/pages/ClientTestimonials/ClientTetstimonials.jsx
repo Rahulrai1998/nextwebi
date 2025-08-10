@@ -7,9 +7,9 @@ import Carousel from "../../components/Carousel";
 
 const ClientTetstimonials = () => {
   return (
-    <ParentContainer>
+    <ParentContainer role="region" aria-labelledby="client-test-title">
       {" "}
-      <Title id="offshore-title">Hear It from Those Who Matter Most</Title>
+      <Title id="client-test-title">Hear It from Those Who Matter Most</Title>
       <SubTitle>
         Offshore development services refers to the practice of hiring a remote
         team or a software development company in a different company to help

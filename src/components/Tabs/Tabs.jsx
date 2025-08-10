@@ -38,6 +38,7 @@ const Tabs = ({ defaulValue = 0, tabData = [] }) => {
       <TabList role="tablist" aria-label="Tabs">
         {tabData.map((tab, index) => (
           <Tab
+            className="tab-section"
             isSelected={index === selected}
             key={tab.id}
             ref={(el) => (tabRefs.current[index] = el)}
@@ -72,6 +73,7 @@ const Tabs = ({ defaulValue = 0, tabData = [] }) => {
 export default Tabs;
 
 const Tab = styled.button`
+  position: relative;
   text-align: left;
   cursor: pointer;
   font-style: bold;
@@ -92,6 +94,23 @@ const Tab = styled.button`
 const TabList = styled.div`
   display: flex;
   flex-direction: column;
+
+  .tab-section + .tab-section:before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: 0;
+    transform: translateY(-50%);
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #000000 0%, #ffffff 45%, #000000 100%);
+    pointer-events: none;
+  }
+
+  .tab-section + .tab-section {
+    margin-top: 0.7rem;
+  }
 `;
 
 const TabPanel = styled.div`

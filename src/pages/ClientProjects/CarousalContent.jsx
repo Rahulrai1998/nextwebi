@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import dubaiClientImg from "../../assets/dubai-client.jpg";
+import dubaiClientImg from "../../assets/Subtract.png";
 
 const CarousalContent = () => {
   return (

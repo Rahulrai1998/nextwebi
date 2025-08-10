@@ -11,6 +11,7 @@ import { TeamWorkflow } from "./pages/TeamWorkflow";
 import Faq from "./pages/FAQs/Faq";
 import { ClientTetstimonials } from "./pages/ClientTestimonials";
 import { Technologies } from "./pages/Technologies";
+import { Blogs } from "./pages/Blogs";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Faq />
         <ClientTetstimonials />
         <Technologies />
+        <Blogs />
       </main>
       <Footer />
     </ParentContainer>
