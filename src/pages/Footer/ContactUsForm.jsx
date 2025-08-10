@@ -129,8 +129,8 @@ const ContactUsForm = () => {
 export default ContactUsForm;
 
 const FormWrapper = styled.div`
-  max-width: 600px;
-  margin: 40px auto;
+  max-width: 560px;
+  margin: 30px auto;
   padding: 35px;
   border-radius: 10px;
   border-width: 1px;
@@ -205,8 +205,8 @@ const FormTitle = styled.h2`
 `;
 
 const FormFooterWrapper = styled.div`
-  margin: 10px auto;
-  padding: 20px 0;
+  margin: 0px auto;
+  padding: 2px 0;
   justify-content: space-between;
   display: flex;
   gap: 12px;

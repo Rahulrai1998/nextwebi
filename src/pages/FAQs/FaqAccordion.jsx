@@ -25,4 +25,7 @@ export default FaqAccordion;
 const AccordionContainer = styled.div`
   width: 85%;
   margin: auto;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 `;

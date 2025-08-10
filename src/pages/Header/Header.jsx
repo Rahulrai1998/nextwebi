@@ -81,7 +81,7 @@ const Header = () => {
               <li>
                 <a href="#"> {<RiPresentationFill />} </a>
               </li>
-              <li style={{ color: "#e6392a" }}>
+              <li style={{}}>
                 <a href="#"> {<IoIosCall />} </a>
               </li>
             </ul>
@@ -144,7 +144,7 @@ const Header = () => {
           role="region"
           aria-roledescription="carousel"
           aria-label="Featured highlights"
-          style={{ width: "85%", margin: "9rem auto" }}
+          style={{ width: "85%", margin: "7rem auto" }}
         >
           <Carousel>
             <HeaderCarousalContent />

@@ -30,6 +30,7 @@ const ParentContainer = styled.div`
   h1 {
     font-weight: bold;
     font-size: max(30px, 3.5vw);
+    margin-bottom: 1rem;
   }
   p {
     font-size: max(15px, 1.5vw);
@@ -41,7 +42,9 @@ const ButtonGroup = styled.div`
   justify-content: center;
   gap: 30px;
   width: 50%;
-  margin: 30px auto;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
 `;
 
 const Button = styled.button`
