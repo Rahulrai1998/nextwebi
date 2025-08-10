@@ -1,3 +1,51 @@
+# Install dependencies & run
+
+* clone repo
+* npm install
+* npm run dev
+
+# Technologies used
+
+* React.js, JavaScript, Styled Component, HTML&CSS
+
+
+# Dev Principles & Best Practices
+
+## Modularity & Reusability
+
+I have ensured that the frequently used and reusable components must be kept handy.
+
+* Carousel
+* Tabs
+* Accordion
+* Frequenly used Headers and Titles
+
+![1754814102809](image/README/1754814102809.png)
+
+## Maintainability & Organizations
+
+I have provided a well structured and easy to track folder structure with self-descriptive namings corresponding to the sections in the page.
+
+![1754814381076](image/README/1754814381076.png)
+
+## Scalability
+
+I have implemented config driven components ensuring the future scalings of data with proper key-value pairs.
+
+![1754814531537](image/README/1754814531537.png)
+
+## Accessibilty & SEO
+
+Keeping the screen-readers in mind I have mentioned enough ARIA attributes, semantic tags and roles to the required elements.
+
+## Responsive UI
+
+Have applied mobile-first approach to give fully responsive design to the page.
+
+## Performance 
+
+![1754814904200](image/README/1754814904200.png)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
