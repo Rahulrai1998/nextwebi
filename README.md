@@ -8,7 +8,6 @@
 
 * React.js, JavaScript, Styled Component, HTML&CSS
 
-
 # Dev Principles & Best Practices
 
 ## Modularity & Reusability
@@ -42,9 +41,11 @@ Keeping the screen-readers in mind I have mentioned enough ARIA attributes, sema
 
 Have applied mobile-first approach to give fully responsive design to the page.
 
-## Performance 
+## Performance
 
 ![1754814904200](image/README/1754814904200.png)
+
+### I could have also implemented lazy loading and code-splitting for tab components in order to improve the performance.
 
 # React + Vite
 
