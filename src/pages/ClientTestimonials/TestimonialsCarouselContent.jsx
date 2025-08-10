@@ -33,7 +33,7 @@ const TestimonialsCarouselContent = () => {
           </div>
           <div className="author">
             <img src={tlead} alt="Profile" />
-            <div style={{ textAlign: "left" }}>
+            <div style={{ textAlign: "left" }} className="authorName">
               <strong>Qenowned & D Firm</strong>
               <br />
               <small>Team Lead</small>
@@ -58,9 +58,12 @@ const ParentContainer = styled.div`
     rgba(227, 192, 29, 1)
   );
   horizontal-align: center;
-  margin: auto;
+  margin: 1rem auto;
   padding: 2px;
   border-radius: 20px;
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `;
 const ContentCard = styled.div`
   padding: 40px;
@@ -107,5 +110,25 @@ const ContentCard = styled.div`
     height: 36px;
     border-radius: 10px;
     object-fit: cover;
+  }
+
+  @media (max-width: 700px) {
+    padding: 17px;
+    .logo span {
+      font-size: 12px;
+    }
+    .authorName {
+      font-size: 12px;
+    }
+    .footer {
+      padding: 0;
+    }
+    .author img {
+      width: 25px;
+      height: 25px;
+    }
+    .logo img {
+      width: 25px;
+    }
   }
 `;

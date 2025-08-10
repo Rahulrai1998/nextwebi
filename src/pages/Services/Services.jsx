@@ -41,6 +41,9 @@ const ParentContainer = styled.section`
   padding: 4rem;
   background-color: rgba(0, 0, 0, 1);
   color: #ffffff;
+  @media (max-width: 770px) {
+    padding: 2rem;
+  }
 `;
 
 const ServicesCardGrid = styled.div`
@@ -52,7 +55,7 @@ const ServicesCardGrid = styled.div`
   padding: 2rem 0;
 
   @media (max-width: 650px) {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
     padding: 1rem 0;
     gap: 20px;
   }

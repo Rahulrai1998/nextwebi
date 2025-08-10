@@ -13,4 +13,9 @@ const H4 = styled.h4`
   line-height: 31px;
   font-size: max(1.15vw, 15px);
   margin-bottom: 3rem;
+  @media (max-width: 650px) {
+    line-height: 30px;
+    margin-bottom: 1rem;
+    line-height: 22px;
+  }
 `;

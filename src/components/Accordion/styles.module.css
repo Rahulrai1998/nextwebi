@@ -14,7 +14,7 @@ body {
 }
 
 .accordion {
-   font-style: Lato;
+  font-style: Lato;
   /* border-top: 1px solid #ccc; */
   border-radius: 10px;
 
@@ -23,6 +23,7 @@ body {
 }
 
 .item {
+  padding: 0.5rem 0;
   /* border-bottom: 1px solid #ccc; */
   border-radius: 10px;
   margin-bottom: 10px;
@@ -66,4 +67,13 @@ body {
 
 .itemBtnExpanded .chevron {
   transform: rotate(90deg);
+}
+
+p.title {
+  margin-bottom: 1rem;
+}
+
+.headerwrap{
+  display: flex;
+  justify-content: space-between;
 }

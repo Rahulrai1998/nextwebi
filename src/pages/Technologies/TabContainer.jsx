@@ -17,4 +17,7 @@ const ParentContainer = styled.div`
   display: flex;
   padding: 0 0 2rem 0;
   justify-content: space-between;
+  @media (max-width: 950px) {
+    flex-direction: column;
+  }
 `;

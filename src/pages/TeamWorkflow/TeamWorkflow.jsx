@@ -20,4 +20,8 @@ const ParentContainer = styled.section`
   display: flex;
   padding: 4rem;
   flex-direction: row;
+  @media (max-width: 770px) {
+    padding: 2rem 3rem;
+    flex-direction: column;
+  }
 `;

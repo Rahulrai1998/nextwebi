@@ -57,6 +57,13 @@ const ParentContainer = styled.div`
     max-width: 187px;
     height: 48px;
   }
+  @media (max-width: 1030px) {
+    padding: 2rem  0;
+    img {
+      max-width: 140px;
+      height: 25px;
+    }
+  }
   p {
     font-size: 20px;
     line-height: 24px;
@@ -69,4 +76,5 @@ const ClientList = styled.div`
   margin: auto;
   gap: 5rem;
   justify-content: center;
+  overflow: auto;
 `;

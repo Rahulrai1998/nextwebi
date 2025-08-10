@@ -9,7 +9,12 @@ const WorkFlowAccordion = () => {
   return (
     <AccordionProvider>
       {workflowData?.map((data) => (
-        <AccordionItem key={data?.id} header={data?.title}>
+        <AccordionItem
+          initialEntered={data?.id === 1}
+          key={data?.id}
+          header={data?.title}
+          subtitle={data?.subtitle}
+        >
           {data?.body}
           {data?.pointers && (
             <PointersParent>

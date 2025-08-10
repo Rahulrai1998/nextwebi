@@ -79,10 +79,10 @@ const Header = () => {
                 ]}
               />
               <li>
-                <a href="#"> {<RiPresentationFill />} </a>
+                <a href="#client-test-title"> {<RiPresentationFill />} </a>
               </li>
               <li style={{}}>
-                <a href="#"> {<IoIosCall />} </a>
+                <a href="#form-title"> {<IoIosCall />} </a>
               </li>
             </ul>
           </nav>
@@ -131,11 +131,11 @@ const Header = () => {
                 ]}
               />
               <li>
-                <a href="#contact">Our work</a>
+                <a href="#client-test-title">Our work</a>
               </li>
             </ul>
             <button className="contact-us-btn" aria-label="Contact our team">
-              Contact Us
+              <a href="#form-title">Contact Us</a>
             </button>
           </nav>
         )}
@@ -144,7 +144,7 @@ const Header = () => {
           role="region"
           aria-roledescription="carousel"
           aria-label="Featured highlights"
-          style={{ width: "85%", margin: "7rem auto" }}
+          style={{ width: "85%", margin: "8rem auto" }}
         >
           <Carousel>
             <HeaderCarousalContent />

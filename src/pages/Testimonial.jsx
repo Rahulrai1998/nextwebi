@@ -17,6 +17,11 @@ const ParentContainer = styled.div`
   align-items: center;
   padding: 6rem 0;
   background-color: rgba(18, 19, 29, 1);
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+    img {
+    }
+  }
 `;
 
 const Image = styled.img`

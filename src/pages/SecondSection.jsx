@@ -83,11 +83,12 @@ const RightContainer = styled.div`
     max-width: 100%;
     height: auto;
   }
-
   @media (max-width: 650px) {
+    padding: 2rem 0 3rem 0;
     margin: auto;
+    text-align: center;
     img {
-      max-width: 90%;
+      max-width: 70%;
     }
   }
 `;

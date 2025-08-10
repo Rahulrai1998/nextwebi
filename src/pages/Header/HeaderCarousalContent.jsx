@@ -12,8 +12,13 @@ const HeaderCarousalContent = () => {
         team of expert developers
       </p>
       <ButtonGroup>
-        <Button $bgcolor="rgba(20, 104, 251, 1)">Get in Touch</Button>
-        <Button>Our Works</Button>
+        <Button $bgcolor="rgba(20, 104, 251, 1)">
+          <a href="#form-title">Get in Touch</a>
+        </Button>
+        <Button>
+          {" "}
+          <a href="#client-test-title">Our Works</a>{" "}
+        </Button>
       </ButtonGroup>
     </ParentContainer>
   );

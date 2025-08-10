@@ -79,7 +79,7 @@ const Tab = styled.button`
   font-style: bold;
   font-family: Lato;
   font-size: 22px;
-  line-height: 10px;
+  line-height: 20px;
   font-weight: 700;
   display: block;
   padding: 1.8rem;
@@ -89,11 +89,18 @@ const Tab = styled.button`
   border: none;
   border-radius: 10px;
   background: ${(prop) => (prop.isselected ? "rgba(27, 27, 27, 1)" : "none")};
+  @media (max-width: 950px) {
+    font-size: 15px;
+    line-height: 1rem;
+    text-align: center;
+    width: 100%;
+  }
 `;
 
 const TabList = styled.div`
   display: flex;
   flex-direction: column;
+  width: 50%;
 
   .tab-section + .tab-section:before {
     content: "";
@@ -111,17 +118,27 @@ const TabList = styled.div`
   .tab-section + .tab-section {
     margin-top: 0.7rem;
   }
+
+  @media (max-width: 950px) {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
 `;
 
 const TabPanel = styled.div`
+  flex: 1;
   display: grid;
   gap: 17px;
   grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 950px) {
+    font-size: 16px;
+    gap: 1.5rem;
+    line-height: 1rem;
+  }
 `;
 
 const LanguageCard = styled.div`
-  width: 285px;
-  padding: 0 0.4rem;
+  padding: 0 2rem;
   text-align: center;
   display: flex;
   background-color: rgba(27, 27, 27, 1);
@@ -134,5 +151,14 @@ const LanguageCard = styled.div`
   }
   span {
     padding: 10px;
+  }
+
+  @media (max-width: 950px) {
+    width: 100%;
+    padding: 0.5rem;
+    img {
+      width: 32px;
+      height: 32px;
+    }
   }
 `;

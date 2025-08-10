@@ -28,4 +28,7 @@ const ParentContainer = styled.section`
   padding: 4rem;
   background-color: rgba(18, 18, 18, 1);
   color: #ffffff;
+  @media (max-width: 770px) {
+    padding: 2rem;
+  }
 `;

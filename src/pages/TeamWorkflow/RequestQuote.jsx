@@ -34,6 +34,11 @@ const ParentContainer = styled.div`
     font-size: 20px;
     line-height: 27px;
   }
+  @media (max-width: 770px) {
+    padding: 0.9rem;
+    gap: 1.2rem;
+    width: 95%;
+  }
 `;
 
 const Button = styled.button`
@@ -47,6 +52,9 @@ const Button = styled.button`
   color: #ffffff;
   background-color: rgba(20, 104, 251, 1);
   border: none;
+  @media (max-width: 770px) {
+    font-size: 12px;
+  }
 `;
 
 const ArrowImg = styled.img`

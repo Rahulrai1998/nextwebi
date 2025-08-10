@@ -14,4 +14,8 @@ export default RightHalf;
 
 const ParentContainer = styled.div`
   width: 80%;
+  @media (max-width: 770px) {
+    margin-top: 2rem;
+    width: 100%;
+  }
 `;

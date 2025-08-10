@@ -14,4 +14,8 @@ const H1 = styled.h1`
   line-height: 50px;
   letter-spacing: -0.02em;
   margin-bottom: 1rem;
+  @media (max-width: 650px) {
+    line-height: 30px;
+    margin-bottom: 0.7rem;
+  }
 `;
