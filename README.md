@@ -3,6 +3,7 @@
 * clone repo
 * npm install
 * npm run dev
+* live-demo: [live](https://nextwebi-liart.vercel.app/)
 
 # Technologies used
 
